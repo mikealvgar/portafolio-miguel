@@ -2,6 +2,14 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { Briefcase, Code2, Mail, Terminal, Download } from 'lucide-react';
+import { 
+  SiJavascript, SiTypescript, SiDart, SiPhp, SiPython, SiHtml5, SiCss,
+  SiReact, SiVuedotjs, SiAngular, SiAstro, SiNextdotjs,
+  SiNodedotjs, SiNestjs, SiLaravel, SiFirebase, SiSupabase, SiGraphql,
+  SiFlutter, SiGooglegemini
+} from 'react-icons/si';
+import { FaJava, FaDatabase, FaRobot, FaTerminal, FaFileAlt, FaProjectDiagram } from 'react-icons/fa';
+import ContactSection from '../components/ContactSection';
 import '../index.css';
 
 const fadeInUp: Variants = {
@@ -16,6 +24,51 @@ const staggerContainer: Variants = {
     transition: { staggerChildren: 0.2 }
   }
 };
+
+const getSkillIcon = (skillName: string) => {
+  const iconProps = { size: 16 };
+  switch (skillName) {
+    case 'JavaScript': return <SiJavascript {...iconProps} color="#F7DF1E" />;
+    case 'TypeScript': return <SiTypescript {...iconProps} color="#3178C6" />;
+    case 'Dart': return <SiDart {...iconProps} color="#0175C2" />;
+    case 'Java': return <FaJava {...iconProps} color="#f89820" />;
+    case 'PHP': return <SiPhp {...iconProps} color="#777BB4" />;
+    case 'Python': return <SiPython {...iconProps} color="#3776AB" />;
+    case 'HTML5/CSS3': return <div style={{display:'flex',gap:'4px'}}><SiHtml5 {...iconProps} color="#E34F26"/><SiCss {...iconProps} color="#1572B6"/></div>;
+    
+    case 'React': return <SiReact {...iconProps} color="#61DAFB" />;
+    case 'Vue':
+    case 'Vue.js': return <SiVuedotjs {...iconProps} color="#4FC08D" />;
+    case 'Angular': return <SiAngular {...iconProps} color="#DD0031" />;
+    case 'Astro': return <SiAstro {...iconProps} color="#FF5D01" />;
+    case 'Next.js': return <SiNextdotjs {...iconProps} color="#FFFFFF" />;
+    
+    case 'Node.js': return <SiNodedotjs {...iconProps} color="#339933" />;
+    case 'NestJS': return <SiNestjs {...iconProps} color="#E0234E" />;
+    case 'Laravel': return <SiLaravel {...iconProps} color="#FF2D20" />;
+    case 'SQL': return <FaDatabase {...iconProps} color="#336791" />;
+    case 'Firebase': return <SiFirebase {...iconProps} color="#FFCA28" />;
+    case 'Supabase': return <SiSupabase {...iconProps} color="#3ECF8E" />;
+    case 'GraphQL': return <SiGraphql {...iconProps} color="#E10098" />;
+    
+    case 'Flutter': return <SiFlutter {...iconProps} color="#02569B" />;
+    
+    case 'Gemini': return <SiGooglegemini {...iconProps} color="#8E75B2" />;
+    case 'Claude': return <FaRobot {...iconProps} color="#D97757" />;
+    case 'Antigravity CLI': return <FaTerminal {...iconProps} color="#FFFFFF" />;
+    case 'Spec Driven Development': return <FaFileAlt {...iconProps} color="#6c757d" />;
+    case 'Agentic Workflows': return <FaProjectDiagram {...iconProps} color="#17a2b8" />;
+    
+    default: return null;
+  }
+};
+
+const SkillChip = ({ name }: { name: string }) => (
+  <span className="skill-chip">
+    {getSkillIcon(name)}
+    {name}
+  </span>
+);
 
 const TypewriterHeader = () => {
   const [phase, setPhase] = useState(0);
@@ -121,10 +174,10 @@ function Home() {
             </ul>
             
             <div className="flex-row-gap" style={{ marginTop: '1.5rem' }}>
-              <span className="skill-chip">Flutter</span>
-              <span className="skill-chip">Dart</span>
-              <span className="skill-chip">React</span>
-              <span className="skill-chip">TypeScript</span>
+              <SkillChip name="Flutter" />
+              <SkillChip name="Dart" />
+              <SkillChip name="React" />
+              <SkillChip name="TypeScript" />
             </div>
           </motion.div>
 
@@ -146,10 +199,10 @@ function Home() {
             </ul>
 
             <div className="flex-row-gap" style={{ marginTop: '1.5rem' }}>
-              <span className="skill-chip">Flutter</span>
-              <span className="skill-chip">Vue.js</span>
-              <span className="skill-chip">Angular</span>
-              <span className="skill-chip">React</span>
+              <SkillChip name="Flutter" />
+              <SkillChip name="Vue.js" />
+              <SkillChip name="Angular" />
+              <SkillChip name="React" />
             </div>
           </motion.div>
 
@@ -184,11 +237,11 @@ function Home() {
           </ul>
           
           <div className="flex-row-gap" style={{ marginTop: '1.5rem' }}>
-            <span className="skill-chip">Gemini</span>
-            <span className="skill-chip">Claude</span>
-            <span className="skill-chip">Antigravity CLI</span>
-            <span className="skill-chip">Spec Driven Development</span>
-            <span className="skill-chip">Agentic Workflows</span>
+            <SkillChip name="Gemini" />
+            <SkillChip name="Claude" />
+            <SkillChip name="Antigravity CLI" />
+            <SkillChip name="Spec Driven Development" />
+            <SkillChip name="Agentic Workflows" />
           </div>
         </motion.div>
       </motion.section>
@@ -212,7 +265,7 @@ function Home() {
             <h3 style={{ color: 'white', marginBottom: '1rem', fontWeight: 600 }}>Lenguajes</h3>
             <div className="flex-row-gap">
               {['JavaScript', 'TypeScript', 'Dart', 'Java', 'PHP', 'Python', 'HTML5/CSS3'].map(skill => (
-                <span key={skill} className="skill-chip">{skill}</span>
+                <SkillChip key={skill} name={skill} />
               ))}
             </div>
           </motion.div>
@@ -221,7 +274,7 @@ function Home() {
             <h3 style={{ color: 'white', marginBottom: '1rem', fontWeight: 600 }}>Frontend</h3>
             <div className="flex-row-gap">
               {['React', 'Vue', 'Angular', 'Astro', 'Next.js'].map(skill => (
-                <span key={skill} className="skill-chip">{skill}</span>
+                <SkillChip key={skill} name={skill} />
               ))}
             </div>
           </motion.div>
@@ -230,13 +283,16 @@ function Home() {
             <h3 style={{ color: 'white', marginBottom: '1rem', fontWeight: 600 }}>Backend & DB</h3>
             <div className="flex-row-gap">
               {['Node.js', 'NestJS', 'Laravel', 'SQL', 'Firebase', 'Supabase', 'GraphQL'].map(skill => (
-                <span key={skill} className="skill-chip">{skill}</span>
+                <SkillChip key={skill} name={skill} />
               ))}
             </div>
           </motion.div>
 
         </div>
       </motion.section>
+      
+      {/* CONTACT SECTION */}
+      <ContactSection />
       
       {/* FOOTER */}
       <footer style={{ padding: '4rem 0', textAlign: 'center', borderTop: '1px solid var(--glass-border)', marginTop: '2rem' }}>

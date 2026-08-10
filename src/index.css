@@ -105,6 +105,7 @@ body {
 .skill-chip {
   display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
   padding: 0.4rem 1rem;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--glass-border);
