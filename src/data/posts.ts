@@ -9,6 +9,14 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    id: 'el-poder-del-plan',
+    title: 'El poder del comando \'/plan\': Por qué tu IA debe pensar antes de codificar',
+    date: '10 Ago, 2026',
+    description: 'Descubre cómo forzar a los agentes de IA a estructurar sus pensamientos antes de escribir código puede salvar tu proyecto de errores desastrosos.',
+    thumbnail: '/plan-banner.png',
+    file: 'el-poder-del-plan.md'
+  },
+  {
     id: 'configurar-figma-mcp',
     title: 'Configurando Figma MCP: Del Diseño al Código con IA',
     date: '12 Ago, 2026',
