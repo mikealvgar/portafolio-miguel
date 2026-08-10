@@ -176,3 +176,40 @@ body {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+.markdown-body {
+  color: var(--text-main);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.markdown-body h1 {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem 0;
+  color: var(--accent-color);
+}
+
+.markdown-body h2 {
+  font-size: 1.75rem;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 0.5rem;
+}
+
+.markdown-body h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.markdown-body p, .markdown-body ul {
+  margin-bottom: 1.5rem;
+}
+
+.markdown-body ul {
+  padding-left: 1.5rem;
+  list-style-type: square;
+}
+
+.markdown-body strong {
+  color: var(--accent-light);
+}
