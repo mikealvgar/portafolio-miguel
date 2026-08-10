@@ -13,7 +13,7 @@ export const posts: Post[] = [
     title: 'Configurando Figma MCP: Del Diseño al Código con IA',
     date: '12 Ago, 2026',
     description: 'Aprende cómo conectar directamente tus diseños de Figma con tu agente de IA mediante el Model Context Protocol (MCP) para generar componentes píxel a píxel.',
-    thumbnail: '/logo_final.jpg',
+    thumbnail: '/figma-mcp-banner.png',
     file: 'figma-mcp.md'
   },
   {
