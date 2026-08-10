@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { motion, Variants } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { Briefcase, Code2, Mail, Terminal, Download } from 'lucide-react';
 import './index.css';
 
