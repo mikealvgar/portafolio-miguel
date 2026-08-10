@@ -42,7 +42,7 @@ Una vez configurado, el flujo de trabajo es brutal. No necesitas pelear con la I
 
 > *"Por favor, utiliza tus herramientas de Figma para analizar este archivo: `https://www.figma.com/file/...`. Revisa el frame llamado 'Dashboard Mobile', extrae todos los tokens de diseño (colores, espaciados, fuentes) y genérame el componente completo en React + TypeScript que coincida píxel a píxel con el maquetado."*
 
-El agente se conectará a la API a través del MCP, extraerá toda la metadata y te devolverá el código perfectamente estructurado para que tú solo te enfoques en conectar la lógica de negocio.
+El agente se conectará a la API a través del MCP, extraerá toda la metadata y te devolverá el código perfectamente estructurado. Personalmente, he utilizado este mismo flujo con gran éxito para **maquetar pantallas completas y complejas tanto en Flutter como en Angular**, ahorrando horas de trabajo visual mecánico para poder enfocarme exclusivamente en conectar la lógica de negocio y los servicios.
 
 ---
 
