@@ -169,7 +169,7 @@ function Home() {
             </div>
             
             <ul style={{ marginTop: '1.5rem', color: 'var(--text-muted)', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              <li><strong>App de Casino (Arquitectura y Rendimiento):</strong> Diseñé la arquitectura del monorepo que permitió unificar 3 aplicaciones móviles, optimizando las animaciones en Flutter para garantizar <strong>60 FPS estables</strong> incluso en dispositivos de gama baja.</li>
+              <li><strong>App de Casino (Arquitectura y Rendimiento):</strong> Diseñé la arquitectura del monorepo que permitió unificar 3 aplicaciones móviles, optimizando las animaciones en Flutter para lograr una <strong>mejor eficiencia</strong> incluso en dispositivos de gama baja.</li>
               <li><strong>Administrador de Cocina:</strong> Participé como desarrollador enfocándome en la implementación de características y corrección de bugs, logrando mejorar significativamente la eficiencia y estabilidad del panel web administrativo.</li>
             </ul>
             
