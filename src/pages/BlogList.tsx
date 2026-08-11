@@ -32,7 +32,7 @@ export default function BlogList() {
         </motion.div>
         
         <div className="flex-col-gap" style={{ marginTop: '2rem' }}>
-          {posts.map(post => (
+          {[...posts].reverse().map(post => (
             <motion.div key={post.id} variants={fadeInUp} className="glass-card" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
               <img src={post.thumbnail} alt={post.title} style={{ width: '120px', height: '120px', objectFit: 'cover', borderRadius: '12px', border: '1px solid var(--glass-border)' }} />
               <div style={{ flex: 1, minWidth: '250px' }}>
