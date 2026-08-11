@@ -31,5 +31,13 @@ export const posts: Post[] = [
     description: 'En este artículo explico cómo utilizo herramientas de Inteligencia Artificial y metodologías como Spec Driven Development para acelerar el desarrollo web.',
     thumbnail: '/sdd-banner.jpg',
     file: 'mi-primer-post.md'
+  },
+  {
+    id: 'herdr-profundidad',
+    title: 'Herdr: Un gestor de terminales diseñado para agentes de IA',
+    date: '10 Ago, 2026',
+    description: 'Descubre cómo Herdr resuelve el caos de usar múltiples agentes de IA en la terminal mediante espacios de trabajo persistentes y rastreo de estados.',
+    thumbnail: '/herdr-banner.png',
+    file: 'herdr-profundidad.md'
   }
 ];
