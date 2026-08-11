@@ -39,5 +39,21 @@ export const posts: Post[] = [
     description: 'Descubre cómo Herdr resuelve el caos de usar múltiples agentes de IA en la terminal mediante espacios de trabajo persistentes y rastreo de estados.',
     thumbnail: '/herdr-banner.png',
     file: 'herdr-profundidad.md'
+  },
+  {
+    id: 'qa-criterios',
+    title: 'Creando Skills personalizadas en IA: El caso práctico de QA',
+    date: '11 Ago, 2026',
+    description: 'Aprende cómo forzar a los agentes de IA a actuar como Ingenieros de QA generando Criterios de Aceptación estrictos antes de programar.',
+    thumbnail: '/qa-banner.jpg',
+    file: 'qa-criterios.md'
+  },
+  {
+    id: 'que-son-las-skills',
+    title: '¿Qué son las "Skills" en la IA y por qué cambiarán tu forma de programar?',
+    date: '11 Ago, 2026',
+    description: 'Olvídate de repetirle a la IA cómo hacer su trabajo todos los días. Descubre cómo las Skills personalizadas actúan como la memoria muscular de tus agentes.',
+    thumbnail: '/skills-banner.jpg',
+    file: 'que-son-las-skills.md'
   }
 ];
