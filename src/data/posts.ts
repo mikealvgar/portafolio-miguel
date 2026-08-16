@@ -55,5 +55,13 @@ export const posts: Post[] = [
     description: 'Olvídate de repetirle a la IA cómo hacer su trabajo todos los días. Descubre cómo las Skills personalizadas actúan como la memoria muscular de tus agentes.',
     thumbnail: '/skills-banner.jpg',
     file: 'que-son-las-skills.md'
+  },
+  {
+    id: 'git-worktree-ia',
+    title: 'Multiplicando la Productividad: Git Worktree y Agentes de IA',
+    date: '16 Ago, 2026',
+    description: 'Descubre cómo los entornos de desarrollo aislados con Git Worktree permiten trabajar simultáneamente en múltiples tareas sin interferir con tu Agente de Inteligencia Artificial.',
+    thumbnail: '/git-worktree-banner.jpg',
+    file: 'git-worktree-ia.md'
   }
 ];
