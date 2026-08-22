@@ -214,3 +214,13 @@ body {
 .markdown-body strong {
   color: var(--accent-light);
 }
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 2rem auto;
+  display: block;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}

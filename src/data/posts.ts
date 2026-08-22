@@ -9,6 +9,14 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    id: 'omarchy-ia-flujo-trabajo',
+    title: 'Potenciando mi Flujo de Trabajo: Desarrollo, Inteligencia Artificial y Omarchy',
+    date: '22 Ago, 2026',
+    description: 'Descubre cómo he optimizado mi entorno de desarrollo utilizando Omarchy (Hyprland) e Inteligencia Artificial para potenciar mis proyectos personales.',
+    thumbnail: '/omarchy_desktop.jpg',
+    file: 'omarchy.md'
+  },
+  {
     id: 'el-poder-del-plan',
     title: 'El poder del comando \'/plan\': Por qué tu IA debe pensar antes de codificar',
     date: '10 Ago, 2026',
